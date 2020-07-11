@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+
+/***********************************************
+* IFrame SSI script II- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//Input the IDs of the IFRAMES you wish to dynamically resize to match its content height:
+//Separate each ID with a comma. Examples: ["myframe1", "myframe2"] or ["myframe"] or [] for none:
+var iframeids=["mainframe"]
+
+//Should script hide iframe from browsers that don't support this script (non IE5+/NS6+ browsers. Recommended):
+var iframehide="yes"
+
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i])
+tempobj.style.display="block"
+}
+}
+}
+
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}
+}
+}
+
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller
+
+
+</script>
+
+<script type="text/javascript" src="oodomimagerollover.js">
+
+/***********************************************
+* DOM Image Rollover II- By Adam Smith (http://www.codevendor.com)
+* Script featured on and available at Dynamic Drive (http://www.dynamicdrive.com)
+* Keep this notice intact for usage please
+***********************************************/
+
+</script>
+<script type="text/javascript">
+
+/***********************************************
+* IFrame SSI script II- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//Input the IDs of the IFRAMES you wish to dynamically resize to match its content height:
+//Separate each ID with a comma. Examples: ["myframe1", "myframe2"] or ["myframe"] or [] for none:
+var iframeids=["subnav"]
+
+//Should script hide iframe from browsers that don't support this script (non IE5+/NS6+ browsers. Recommended):
+var iframehide="yes"
+
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i])
+tempobj.style.display="block"
+}
+}
+}
+
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}
+}
+}
+
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller
+
+</script>
+
+</script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BobbaHits.com! ~ Version 1</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="banner"></div>
+  <div id="nav">
+  <div id="leftspace"></div>
+    
+    
+  <a href="javascript:loadintoIframe('mainframe', 'home.html')"><div id="button1"><img src="images/nav/button1.png" border="0px" srcover="images/nav/button1_1.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/websitenav.html')"><div id="button2"><img src="images/nav/button2.png" border="0px" srcover="images/nav/button2_2.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/newsnav.html')"><div id="button3"><img src="images/nav/button3.png" border="0" srcover="images/nav/button3_3.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/communitynav.html')"><div id="button4"><img src="images/nav/button4.png" border="0px" srcover="images/nav/button4_4.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/guidesnav.html')"><div id="button5"><img src="images/nav/button5.png" border="0px" srcover="images/nav/button5_5.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/radio.html')"><div id="button6"><img src="images/nav/button6.png" border="0px" srcover="images/nav/button6_6.png"></div></a>
+  <a href="javascript:loadintoIframe('subnav', 'nav/radio.html')"><div id="button7"><img src="images/nav/button7.png" border="0px" srcover="images/nav/button7_7.png"></div></a>
+  <div id="rightspace"></div>
+  </div>
+  <div id="left">
+  <div id="leftcontainer">
+  <div id="subnav_top"></div>
+  <div id="subnav_mid">
+  <iframe id="subnav" src="nav/websitenav.html" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%; display:none"></iframe>
+  </div>
+  <div id="subnav_bot"></div>
+    
+  <div id="news_top"></div>
+  <div id="news_mid"><script type="text/javascript">
+//<![CDATA[
+window.onload = function() {
+var f = document.getElementById("mainframe");//Sets iframe id
+function resize() { //Starts resize function
+var h = "";
+var w = "";
+if (f.contentDocument) {
+h = f.contentDocument.documentElement.offsetHeight + 20 + "px";
+// can't find anything for Opera and Firefox that works for the width. OffetWidth doesn't work right either.(f.contentDocument.documentElement,"").getPropertyValue("width");
+} else if (f.contentWindow) {
+h = f.contentWindow.document.body.scrollHeight + 5 + "px";
+} else {
+return;
+}
+f.setAttribute("height",h);
+f.parentNode.setAttribute("height",h);
+}
+if (window.addEventListener) {
+f.onload = resize;
+} else if (f.attachEvent) {
+f.attachEvent("onload", resize);
+} else {
+return;
+}
+resize(); //starts resize function that was coded further up the code
+}
+//]]>
+</script>
+
+
+  </div>
+  <div id="news_bot"></div>
+    
+  <div id="featured_top"></div>
+  <div id="featured_mid">Check out our new pages!<br />
+    <br />
+    <br />
+    <br />
+    <br />
+    Yeah so does this one!
+  </div>
+  <div id="featured_bot"></div>
+  </div>
+  </div>
+  <div id="advert"></div>
+  <div id="middle">
+  <iframe id="mainframe"  src="home.html" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%; display:compact"></iframe>
+  </div>
+  <div id="right">
+  <div id="rightcontainer">
+  <div id="player_top"></div>
+  <div id="player_mid">Radio Player here</div>
+  <div id="player_bot"></div>
+    
+  <div id="stats_top"></div>
+  <div id="stats_mid">Radio Stats go here!</div>
+  <div id="stats_bot"><br /><center>
+  Copyright to BobbaHits.com, <br />
+  Created by -Temp &amp; iRonnyy</center>
+  </div>
+  </div>
+  </div>
+  <div id="footer"></div>
+</div>
+
+</body>
+</html>

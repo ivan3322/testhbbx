@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* Coded by conclusion for BobbaHits */
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	padding: 0;
+	margin: 0;
+	background:url(images/bg.png);
+	bottom repeat-y;
+	text-decoration:none;
+
+}
+div#container {
+	background:url(images/container.png);
+	width:1021px;
+	height:auto;
+	margin:auto;
+	overflow:hidden;
+}
+div#banner {
+	background:url(images/banner.png);
+	width:1021px;
+	height:108px;
+	float:left;
+}
+div#nav {
+	width:1021px;
+	height:70px;
+	float:left
+}
+div#leftspace {
+	background:url(images/nav/leftspace.png);
+	width:214px;
+	height:70px;
+	float:left
+}
+div#button1 {
+	background:url(images/nav/button1.png);
+	width:86px;
+	height:70px;
+	float:left
+}
+div#button2 {
+	background:url(images/nav/button2.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#button3 {
+	background:url(images/nav/button3.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#button4 {
+	background:url(images/nav/button4.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#button5 {
+	background:url(images/nav/button5.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#button6 {
+	background:url(images/nav/button6.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#button7 {
+	background:url(images/nav/button7.png);
+	width:84px;
+	height:70px;
+	float:left
+}
+div#rightspace {
+	background:url(images/nav/rightspace.png);
+	width:217px;
+	height:70px;
+	float:left
+}
+div#left {
+	width:227px;
+	height:auto;
+	float:left;
+}
+div#leftcontainer {
+	width:223px;
+	height:auto;
+	float:right
+}
+
+div#subnav_top {
+	background:url(images/boxes/subnav_top.png);
+	width:222px;
+	height:33px;
+	float:left;
+
+}
+div#subnav_mid {
+	background:url(images/boxes/subnav_mid.png);
+	width:220px;
+	height:auto;
+	float:left;
+	padding-left:3px
+}
+div#subnav_bot {
+	background:url(images/boxes/subnav_bot.png);
+	width:220px;
+	height:4px;
+	float:left;
+	padding-left:3px
+
+}
+div#news_top {
+	background:url(images/boxes/news_top.png);
+	width:223px;
+	height:33px;
+	float:left
+}
+div#news_mid {
+	background:url(images/boxes/news_mid.png);
+	width:220px;
+	height:auto;
+	float:left;
+	padding-left:3px
+}
+div#news_bot {
+	background:url(images/boxes/news_bot.png);
+	width:223px;
+	height:3px;
+	float:left;
+}
+
+div#featured_top {
+	background:url(images/boxes/featured_top.png);
+	width:223px;
+	height:32px;
+	float:left
+}
+div#featured_mid {
+	background:url(images/boxes/featured_mid.png);
+	width:220px;
+	height:auto;
+	float:left;
+	padding-left:3px
+}
+div#featured_bot {
+	background:url(images/boxes/featured_bot.png);
+	width:223px;
+	height:3px;
+	float:left;
+}
+div#middle {
+	width:550px;
+	height:auto;
+	float:left;
+	padding:5px 10px 0px 7px
+}
+div#right {
+	width:223px;
+	height:auto;
+	float:left;
+}
+div#rightcontainer {
+	width:223px;
+	height:auto;
+	float:left;
+}
+div#player_top {
+	background:url(images/boxes/player_top.png);
+	width:223px;
+	height:32px;
+	float:left;
+}
+div#player_mid {
+	background:url(images/boxes/player_mid.png);
+	width:220px;
+	height:auto;
+	float:left;
+	padding-left:3px
+}
+div#player_bot {
+	background:url(images/boxes/player_bot.png);
+	width:223px;
+	height:4px;
+	float:left;
+}
+div#stats_top {
+	background:url(images/boxes/stats_top.png);
+	width:223px;
+	height:32px;
+	float:left;
+}
+div#stats_mid {
+	background:url(images/boxes/stats_mid.png);
+	width:220px;
+	height:auto;
+	float:left;
+	padding-left:3px
+}
+div#stats_bot {
+	background:url(images/boxes/stats_bot.png);
+	width:223px;
+	height:4px;
+	float:left;
+	font-weight: bold;
+	color: #FFF;
+}
+div#footer {
+	background:url(images/footer.png);
+	width:1021px;
+	height:11px;
+	float:left;
+}
+div#advert {	
+        background:url(images/advert.png);
+	width:790px;
+	height:122px;
+	float:left;
+}
+  
+	
